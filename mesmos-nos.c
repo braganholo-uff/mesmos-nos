@@ -66,7 +66,7 @@ TNoA *criaArvore(char entrada[100], int tamanho) {
             i++;
             j++;
         }
-        novaEntrada[i] = '\0';
+        novaEntrada[j] = '\0';
         novo->esq = criaArvore(novaEntrada, tamanho);
 
         i = tamanho+1; //inicio da subarvore direita na string entrada
@@ -76,7 +76,7 @@ TNoA *criaArvore(char entrada[100], int tamanho) {
             i++;
             j++;
         }
-        novaEntrada[i] = '\0';
+        novaEntrada[j] = '\0';
         novo->dir = criaArvore(novaEntrada, tamanho);
     }
     return novo;
